@@ -23,7 +23,7 @@
 #define UP        191 // 75% duty cycle
 #define UP_FAST   229 // 90% duty cycle
 
-#include "PWM.h"
+#include "PWM-lib/PWM.h"
 
 void setup() {
   pinMode(RED, OUTPUT);
