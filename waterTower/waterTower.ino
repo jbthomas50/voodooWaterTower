@@ -23,12 +23,13 @@
 #define UP        191 // 75% duty cycle
 #define UP_FAST   229 // 90% duty cycle
 
+#include "PWM-lib/PWM.h"
+
 void setup() {
   pinMode(RED, OUTPUT);
   pinMode(GREEN, OUTPUT);
   pinMode(BLUE, OUTPUT);
   pinMode(PUMP, OUTPUT);
-
   // the pump speed shouldn't be changed, so we can
   // start it here and leave it.
   analogWrite(PUMP, STILL);
